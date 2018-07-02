@@ -1,5 +1,5 @@
 
-local bottomMargin = 40
+local bottomMargin = 60
 -----------------------------
 -- left half
 -----------------------------
@@ -148,7 +148,7 @@ hs.hotkey.bind(hyper, "v", function()
 
 end)
         
-  ----------------------------
+----------------------------
 -- center 
 -----------------------------
  
@@ -174,4 +174,28 @@ hs.hotkey.bind(hyper, "c", function()
 end)
         
         
+----------------------------
+-- center bottom
+-----------------------------
+hs.hotkey.bind(hyper, "x", function()
+  local window = hs.window.focusedWindow()
+
+  if window then
+    local frame = window:frame()
+    local screen = window:screen()
+    local maximum = screen:frame() 
+
+
+    frame.x = maximum.x
+    frame.y = maximum.h
+    frame.w = maximum.w
+    frame.h = bottomMargin
+
+    window:setFrame(frame)
+  else
+    alert.show('no active window')
+  end
+
+end)
+
                

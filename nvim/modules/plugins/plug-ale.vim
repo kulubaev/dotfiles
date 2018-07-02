@@ -1,6 +1,6 @@
 
 let g:ale_linters = {'javascript': ['eslint'] }
-let g:ale_javascript_eslint_executable = 'eslint_d'
+let g:ale_javascript_eslint_use_global = 0
 
 let g:ale_statusline_format = ['✘ %d', '∆ %d', '● ok']
 let g:ale_sign_error = '✘'

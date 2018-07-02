@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/ruslan/.config/zsh'
-let g:netrw_dirhist_2='/Users/ruslan/.config'
-let g:netrw_dirhist_3='/Users/ruslan/.config/zsh'
-let g:netrw_dirhist_4='/Users/ruslan'
-let g:netrw_dirhist_5='/Users/ruslan/.config'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/ruslan/.config/nvim/modules/plugins'
+let g:netrw_dirhist_2='/Users/ruslan'
+let g:netrw_dirhist_3='/Users/ruslan/workshop'
+let g:netrw_dirhist_4='/Users/ruslan/workshop/javascript'
+let g:netrw_dirhist_5='/Users/ruslan/workshop/javascript/dev-env'
+let g:netrw_dirhist_6='/Users/ruslan/workshop/javascript/dev-env/src'
+let g:netrw_dirhist_7='/Volumes/workshop/javascript/dev-env/src'
+let g:netrw_dirhist_8='/Volumes/workshop/javascript/dev-env'
