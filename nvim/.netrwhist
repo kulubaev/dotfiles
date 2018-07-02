@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Volumes/workshop'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Volumes/workshop/docs'
 let g:netrw_dirhist_2='/Users/ruslan/.config/nvim'
-let g:netrw_dirhist_3='/Users/ruslan/.config'
-let g:netrw_dirhist_4='/Users/ruslan/.config/zsh'
+let g:netrw_dirhist_3='/Users/ruslan/.config/nvim/modules'
+let g:netrw_dirhist_4='/Users/ruslan/.config/nvim/modules/plugins'
+let g:netrw_dirhist_5='/Users/ruslan/.config/nvim/modules'
+let g:netrw_dirhist_6='/Users/ruslan/.config/nvim'

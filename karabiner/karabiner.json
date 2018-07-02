@@ -21,7 +21,7 @@
 								"to":[{"key_code":"right_arrow"}]
 							},
 							{
-								"description":"Space + K = DOWN",
+								"description":"Space + K = UP",
 								"type":"basic",
 								"from":{
 									"key_code":"k",
@@ -43,7 +43,7 @@
 
 							},
 							{
-								"description":"Space + J = UP",
+								"description":"Space + J = DOWN",
 								"type":"basic",
 								"from":{
 									"key_code":"j",
