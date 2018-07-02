@@ -21,7 +21,7 @@ Plug 'sjl/badwolf'
 
 "  tomorroe theme
 Plug 'chriskempson/vim-tomorrow-theme'
-        
+
 Plug 'chriskempson/base16-vim'
 
 Plug 'jacoborus/tender.vim'
@@ -32,8 +32,12 @@ Plug 'tomasiser/vim-code-dark'
 
 Plug 'AlessandroYorba/Alduin'
 
+Plug 'mhartington/oceanic-next'
+
+Plug 'chriskempson/base16-vim'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" focus 
+" focus
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 Plug 'junegunn/limelight.vim'
@@ -66,8 +70,8 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " powerline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+ Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " git
@@ -107,30 +111,55 @@ Plug 'ruanyl/vim-fixmyjs'
 " snippets/ auto-pair
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
+"
+"snipptes with autocomplete
+
+Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
 
 " auto-pairing
 Plug 'jiangmiao/auto-pairs'
 
-""""""""""""""""""""""""""""""""""""""""""""""""""
-" simple todo 
-""""""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'vitalk/vim-simple-todo'
+" auto insert html
+Plug 'mattn/emmet-vim'
+
+" auto enclose html
+Plug 'alvan/vim-closetag'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""javascript to be extract"""""""""""""""""
+" autocomplete
 """"""""""""""""""""""""""""""""""""""""""""""""""
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" simple todo
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'vitalk/vim-simple-todo'
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " javascript
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" prettifier
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " indentation
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plug 'nathanaelkane/vim-indent-guide'
 
 Plug 'yggdroot/indentLine'
-
 
 Plug 'pangloss/vim-javascript'
 

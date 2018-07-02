@@ -101,7 +101,9 @@ set foldmethod=indent
 
 "if you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
- set termguicolors
+        set termguicolors
+        let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+        let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
 
 " For Neovim 0.1.3 and 0.1.4
@@ -109,11 +111,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Theme
 syntax enable
-colorscheme feral
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
+colorscheme  base16-tomorrow-night
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " pane
@@ -126,3 +127,7 @@ set winwidth=150
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " set relative number
 set relativenumber
+
+
+let g:python_2_host_prog = '/usr/local/bin/python'
+let g:python_3_host_prog = '/usr/local/bin/python3'

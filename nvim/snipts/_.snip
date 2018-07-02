@@ -1,0 +1,36 @@
+snippet imp
+  import ${1} from '${2:module_name}'
+
+snippet exp
+  export ${1}
+
+snippet exd
+  export default ${1}
+
+snippet arrf
+  (${1:param}) => {
+    ${2}
+  }
+
+snippet npr
+  new Promise((resolve, reject) => {
+    ${1}
+  });
+
+snippet bra
+  import { branch } from 'baobab-react/higher-order'
+
+snippet disp
+  const { dispatch } = this.props
+
+  dispatch(${1:action})
+
+snippet eaf
+  export default async function ${1} (${2}) {
+    ${3}
+  }
+
+snippet efu
+  export default function ${1} (${2}) {
+    ${3}
+  }

@@ -1,4 +1,7 @@
 # editors
-alias e='nvim'
-alias vim='nvim'
-alias vi='nvim'
+alias e='/usr/local/bin/nvim'
+alias vim='/usr/local/bin/nvim'
+alias vi='/usr/local/bin/nvim'
+
+
+alias tmux='/usr/local/bin/tmux'

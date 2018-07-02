@@ -1,0 +1,91 @@
+snippet irc
+  import React from 'react'
+
+  class ${1:ClassName} extends React.Component {
+
+    render() {
+      return (
+        ${2:<div />}
+      )
+    }
+  }
+
+  export default $1
+
+snippet ircn
+  import React rom 'react'
+  import { View } from 'react-native'
+
+  class ${1:ClassName} extends React.Component {
+    render() {
+      return (
+        ${2:<View />}
+      )
+    }
+  }
+
+  export default ${1}
+
+snippet cons
+  constructor() {
+    super()
+
+    this.state = {${1}}
+  }
+
+snippet pt
+  static propTypes = {
+    ${1}: PropTypes.${2:string}
+  }
+
+snippet sst
+  this.setState({
+   ${1}: ${2}
+  })
+
+snippet stt
+  const {${1}} = this.state
+
+snippet bnd
+  this.${1:funtionName} = this.$1.bind(this)
+
+snippet cdm
+  componentDidMount() {
+    ${1}
+  }
+
+snippet cdu
+  componentDidUpdate() {
+    ${1}
+  }
+
+snippet cwm
+  componentWillMount() {
+    ${1}
+  }
+
+snippet cwum
+  componentWillUnmount() {
+    ${1}
+  }
+
+snippet cwup
+  componentWillUpdate(nextProps, ${1:nextState}) {
+    ${2}
+  }
+
+snippet scu
+  shouldComponentUpdate(nextProps) {
+    ${1}
+  }
+
+snippet ren
+  render() {
+    return (
+      ${1:<div />}
+    )
+  }
+
+snippet iprop
+  import PropTypes from 'prop-types'
+

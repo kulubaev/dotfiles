@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/ruslan/.config'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Volumes/workshop/learning/react/component-library-318/scripts'
+let g:netrw_dirhist_2='/Volumes/workshop/learning/react/component-library-318'
+let g:netrw_dirhist_3='/Volumes/workshop/learning/react'
+let g:netrw_dirhist_4='/Volumes/workshop/learning/react/component-library-318'
+let g:netrw_dirhist_5='/Volumes/workshop/learning/react/component-library-318/scripts'
+let g:netrw_dirhist_6='/Volumes/workshop/learning/react/component-library-318'
