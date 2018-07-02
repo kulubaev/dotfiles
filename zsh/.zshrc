@@ -8,7 +8,7 @@ export LANG=en_US.UTF-8
 [ -f ~/.config/zsh/.colors ]  && source ~/.config/zsh/.colors
 
 if [ "$TMUX" = "" ]; then tmux; fi
-cd $HOME/workshop/
+cd $HOME/workshop/coding/javascript
 
 
 

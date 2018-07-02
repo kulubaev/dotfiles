@@ -112,7 +112,7 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Change return to control when used as modifier, return when used alone",
+                              "description": "Change return to control when used as modifier, return when used alone",
                                 "from": {
                                     "key_code": "return_or_enter",
                                     "modifiers": {
@@ -148,7 +148,7 @@
                                 ],
                                 "type": "basic"
                             },
-                            {
+                                                      {
                                 "description": "Left and Right Shift together -> Caps Lock",
                                 "from": {
                                     "key_code": "right_shift",
@@ -310,7 +310,6 @@
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         },
@@ -395,8 +394,8 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Left and Right Shift together -> Caps Lock",
-                                "from": {
+                              "description": "Left and Right Shift together -> Caps Lock",
+                              "from": {
                                     "key_code": "right_shift",
                                     "modifiers": {
                                         "mandatory": [
@@ -589,7 +588,6 @@
             ],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         },
@@ -721,7 +719,6 @@
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         }

@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Volumes/workshop/coding/javascript/react-dev-seed'
-let g:netrw_dirhist_2='/Users/ruslan/.config/nvim'
-let g:netrw_dirhist_3='/Users/ruslan/.config'
-let g:netrw_dirhist_4='/Users/ruslan/.config/hammerspoon'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Volumes/workshop/coding/javascript/gist-viewer-app/src/app/core'
+let g:netrw_dirhist_2='/Volumes/workshop/coding/javascript'
+let g:netrw_dirhist_3='/Volumes/workshop/coding'
+let g:netrw_dirhist_4='/Volumes/workshop'
+let g:netrw_dirhist_5='/Volumes'
+let g:netrw_dirhist_6='/'
+let g:netrw_dirhist_7='/Volumes/workshop/coding/javascript'
+let g:netrw_dirhist_8='/Users/ruslan/.config'
