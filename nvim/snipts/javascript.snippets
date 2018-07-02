@@ -6,20 +6,25 @@ endglobal
 
 # -------------- r (react)
 snippet rcf "React Component"
+// @flow
 /**
  * core packages
  */
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 ${1:}
 /**
  * third party packages
  */
+
+import css from 'react-css-modules';
 ${2:}
 
 /**
  * internal packages
  */
 ${3:}
+import styles from './styles/`!p snip.rv = fn_base + '.bemcss'`';
 
 /**
  * @namespace `!p snip.rv = fn_base.capitalize()`
@@ -39,11 +44,20 @@ const `!p snip.rv = fn_base.capitalize()` = (props) => {
   );
 }
 
+const {
+  shape,
+  func,
+  string,
+  number,
+  arrayOf,
+} = PropTypes;
+
 /**
  *  @property { ${6:} } ${7:}               -- represents filter fragment of query string
  */
 
 `!p snip.rv = fn_base.capitalize() + '.'`propTypes = {
+  id: string.isRequired,
 		${8:}
 }
 
@@ -54,27 +68,38 @@ const `!p snip.rv = fn_base.capitalize()` = (props) => {
 		${12: }
 }
 
-export default `!p snip.rv = fn_base.capitalize()`;
+export default css(`!p snip.rv = fn_base.capitalize()`, styles);
 endsnippet
 
+# -------------- r (react)
 snippet rc "React Component"
+// @flow
 /**
  * core packages
  */
-import React, {PropTypes, Component} from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 ${1:}
 /**
  * third party packages
  */
- import css from 'react-css-modules';
+import css from 'react-css-modules';
 ${2:}
 
 /**
  * internal packages
  */
 ${3:}
+import styles from './styles/`!p snip.rv = fn_base + '.bemcss'`';
 
- import styles from '`!p snip.rv = fn_base + '.mspcss'`';
+const {
+  shape,
+  func,
+  string,
+  number,
+  arrayOf,
+} = PropTypes;
+
 /**
  * @namespace `!p snip.rv = fn_base.capitalize()`
  * @memberof ${4:}
@@ -86,17 +111,33 @@ ${3:}
  */
 
 class `!p snip.rv = fn_base.capitalize()` extends Component {
-	
-	constructor(props) {
-		super(prosp);
+  static contextTypes = {
+    router: shape({
+      push: func.isRequired,
+    }).isRequired,
+	  ${6:}
+  }
 
+  static propTypes = {
+    id: string.isRequired,
+	  ${7:}
+  }
+
+  static defaultProps = {
+	  ${8:}
+	}
+
+	constructor(props) {
+		super(props);
+	  ${9:}
 	}
 
 	componentDidMount() {
-
+	  ${10:}
 	}
 
 	render() {
+	  ${11:}
 		return (
 		  ${6:<div>
 
@@ -105,20 +146,52 @@ class `!p snip.rv = fn_base.capitalize()` extends Component {
 	}
 }
 
-/**
- *  @property { ${7:} } ${8:}               -- represents filter fragment of query string
- */
-
-`!p snip.rv = fn_base.capitalize() + '.'`propTypes = {
-}
-
-/**
- *  @property { ${10:} } ${11:}               -- represents filter fragment of query string
- */
-`!p snip.rv = fn_base.capitalize() + '.'`defaultProps = {
-
-}
-
 export default css(`!p snip.rv = fn_base.capitalize()`, styles);
 endsnippet
 
+# -------------- m (mocha)
+snippet mocha "mocha snippet"
+// @flow
+
+// core libraries
+import React from 'react';
+
+// core test libraries
+import { describe, context, it } from 'mocha';
+import expect from 'expect';
+import { mount, shallow } from 'enzyme';
+
+// sut - component under test
+import ${1:} from '${2:}';
+
+${0:}
+endsnippet
+
+snippet describe "mocha describe"
+/** @test ${1:} */
+describe('$2', function(${3:}) {
+
+  ${0:}
+
+});
+endsnippet
+
+snippet context "mocha context"
+/** @test ${1:} */
+context('$2', function(${3:}) {
+
+  ${0:}
+
+});
+endsnippet
+
+
+snippet it "mocha it"
+/** @test ${1:} */
+it('$2', function(${3:}) {
+
+  expect($4).$5;
+  ${0:}
+
+});
+endsnippet

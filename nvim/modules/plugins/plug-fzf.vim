@@ -1,3 +1,4 @@
+set rtp+=/usr/local/opt/fzf
 
 function! s:fzf_statusline()
   " Override statusline as you like

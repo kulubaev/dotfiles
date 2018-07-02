@@ -32,6 +32,11 @@ Plug 'tomasiser/vim-code-dark'
 
 Plug 'AlessandroYorba/Alduin'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" focus 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Plug 'junegunn/limelight.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " folder file browse
@@ -52,11 +57,9 @@ Plug 'terryma/vim-smooth-scroll'
 " folder file browse
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " search
-Plug 'rking/ag.vim'
 
 " fzf.vim
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " status

@@ -10,3 +10,5 @@ if [ -f /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.
   source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
+export PATH=$PATH:./node_modules/.bin:/usr/local/share/dotnet:
+[ -f ./.fzf.zsh ] && source ./.fzf.zsh
