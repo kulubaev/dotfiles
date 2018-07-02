@@ -68,7 +68,7 @@ end)
 -----------------------------
 
 hs.hotkey.bind(hyper, 't', function()
-  hs.application.launchOrFocus('Terminal')
+  hs.application.launchOrFocus('iTerm')
 end)
 
 

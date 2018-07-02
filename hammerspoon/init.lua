@@ -5,7 +5,7 @@ hyper = {"ctrl", "alt", "cmd", "shift"}
 hs.window.animationDuration =  0.1
 
 require('watcher')
-require('position')
+require("position")
 require('focus')
 
 

@@ -1,2 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/ruslan/.hammerspoon/Spoons'
+let g:netrw_dirhist_2='/Users/ruslan/.hammerspoon'
+let g:netrw_dirhist_3='/Users/ruslan'
+let g:netrw_dirhist_4='/Users'
+let g:netrw_dirhist_5='/Users/ruslan'
+let g:netrw_dirhist_6='/Users/ruslan/.config'
+let g:netrw_dirhist_7='/Users/ruslan/.config/.hammerspoon'
