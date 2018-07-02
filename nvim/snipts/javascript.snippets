@@ -1,0 +1,124 @@
+
+global !p
+fn_base = fn.split(os.extsep)[0];
+lower_first = lambda s: s[:1].lower() + s[1:] if s else ''
+endglobal
+
+# -------------- r (react)
+snippet rcf "React Component"
+/**
+ * core packages
+ */
+import React, { PropTypes } from 'react';
+${1:}
+/**
+ * third party packages
+ */
+${2:}
+
+/**
+ * internal packages
+ */
+${3:}
+
+/**
+ * @namespace `!p snip.rv = fn_base.capitalize()`
+ * @memberof ${3:}
+ *
+ * @classdesc `!p snip.rv = fn_base.capitalize()` Component     -- ${4:}
+ *
+ * @returns Virtual DOM
+ *
+ */
+
+const `!p snip.rv = fn_base.capitalize()` = (props) => {
+  return (
+    ${5:<div>
+
+    </div>}
+  );
+}
+
+/**
+ *  @property { ${6:} } ${7:}               -- represents filter fragment of query string
+ */
+
+`!p snip.rv = fn_base.capitalize() + '.'`propTypes = {
+		${8:}
+}
+
+/**
+ *  @property { ${10:} } ${11:}               -- represents filter fragment of query string
+ */
+`!p snip.rv = fn_base.capitalize() + '.'`defaultProps = {
+		${12: }
+}
+
+export default `!p snip.rv = fn_base.capitalize()`;
+endsnippet
+
+snippet rc "React Component"
+/**
+ * core packages
+ */
+import React, {PropTypes, Component} from 'react';
+${1:}
+/**
+ * third party packages
+ */
+ import css from 'react-css-modules';
+${2:}
+
+/**
+ * internal packages
+ */
+${3:}
+
+ import styles from '`!p snip.rv = fn_base + '.mspcss'`';
+/**
+ * @namespace `!p snip.rv = fn_base.capitalize()`
+ * @memberof ${4:}
+ *
+ * @classdesc `!p snip.rv = fn_base.capitalize()` Component     -- ${5:}
+ *
+ * @returns Virtual DOM
+ *
+ */
+
+class `!p snip.rv = fn_base.capitalize()` extends Component {
+	
+	constructor(props) {
+		super(prosp);
+
+	}
+
+	componentDidMount() {
+
+	}
+
+	render() {
+		return (
+		  ${6:<div>
+
+		  </div>}
+		);
+	}
+}
+
+/**
+ *  @property { ${7:} } ${8:}               -- represents filter fragment of query string
+ */
+
+`!p snip.rv = fn_base.capitalize() + '.'`propTypes = {
+}
+
+/**
+ *  @property { ${10:} } ${11:}               -- represents filter fragment of query string
+ */
+`!p snip.rv = fn_base.capitalize() + '.'`defaultProps = {
+
+}
+
+export default css(`!p snip.rv = fn_base.capitalize()`, styles);
+endsnippet
+
