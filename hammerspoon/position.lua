@@ -6,10 +6,10 @@ local bottomMargin = 60
 
 hs.hotkey.bind(hyper, "s", function()
   local window = hs.window.focusedWindow()
-  if window then 
+  if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
     frame.x = maximum.x
     frame.y = maximum.y
@@ -30,10 +30,10 @@ end)
 hs.hotkey.bind(hyper, "w", function()
   local window = hs.window.focusedWindow()
 
-  if window then 
+  if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x
@@ -55,10 +55,10 @@ end)
 hs.hotkey.bind(hyper, "z", function()
   local window = hs.window.focusedWindow()
 
-  if window then 
+  if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x
@@ -72,18 +72,67 @@ hs.hotkey.bind(hyper, "z", function()
   end
 
 end)
+-----------------------------
+--  left wide half
+-----------------------------
+
+hs.hotkey.bind(hyper, "a", function()
+  local window = hs.window.focusedWindow()
+
+  if window then
+    local frame = window:frame()
+    local screen = window:screen()
+    local maximum = screen:frame()
+
+
+    frame.x = maximum.x
+    frame.y = maximum.y
+    frame.w = maximum.w / 2 + maximum.w /4
+    frame.h = maximum.h - bottomMargin
+
+    window:setFrame(frame)
+  else
+    alert.show('no active window')
+  end
+
+end)
+
+-----------------------------
+--  ridght narrow  half
+-----------------------------
+
+hs.hotkey.bind(hyper, "d", function()
+  local window = hs.window.focusedWindow()
+
+  if window then
+    local frame = window:frame()
+    local screen = window:screen()
+    local maximum = screen:frame()
+
+    frame.x = maximum.x + (maximum.w/2 + maximum.w / 4)
+    frame.y = maximum.y
+    frame.w = maximum.w / 2 - maximum.w /4
+    frame.h = maximum.h - bottomMargin
+
+    window:setFrame(frame)
+  else
+    alert.show('no active window')
+  end
+
+end)
+
 
 ------------------------------
 -- right half
 -----------------------------
- 
+
 hs.hotkey.bind(hyper, "f", function()
   local window = hs.window.focusedWindow()
 
-  if window then 
+  if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x + (maximum.w / 2)
@@ -97,25 +146,25 @@ hs.hotkey.bind(hyper, "f", function()
   end
 
 end)
-        
+
 
  ----------------------------
 -- top right half
 -----------------------------
- 
+
 hs.hotkey.bind(hyper, "r", function()
   local window = hs.window.focusedWindow()
 
-  if window then 
+  if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x + (maximum.w / 2)
     frame.y = maximum.y
     frame.w = maximum.w / 2
-    frame.h = (maximum.h / 2) 
+    frame.h = (maximum.h / 2)
 
     window:setFrame(frame)
   else
@@ -133,7 +182,7 @@ hs.hotkey.bind(hyper, "v", function()
   if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x + (maximum.w / 2)
@@ -147,18 +196,18 @@ hs.hotkey.bind(hyper, "v", function()
   end
 
 end)
-        
+
 ----------------------------
--- center 
+-- center
 -----------------------------
- 
+
 hs.hotkey.bind(hyper, "c", function()
   local window = hs.window.focusedWindow()
 
   if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x
@@ -172,8 +221,8 @@ hs.hotkey.bind(hyper, "c", function()
   end
 
 end)
-        
-        
+
+
 ----------------------------
 -- center bottom
 -----------------------------
@@ -183,11 +232,11 @@ hs.hotkey.bind(hyper, "x", function()
   if window then
     local frame = window:frame()
     local screen = window:screen()
-    local maximum = screen:frame() 
+    local maximum = screen:frame()
 
 
     frame.x = maximum.x
-    frame.y = maximum.h
+    frame.y = maximum.h - frame.h / 2
     frame.w = maximum.w
     frame.h = bottomMargin
 
@@ -198,4 +247,4 @@ hs.hotkey.bind(hyper, "x", function()
 
 end)
 
-               
+

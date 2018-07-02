@@ -48,7 +48,7 @@ Plug 'junegunn/limelight.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " file browse/scroll
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
+"Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 
 Plug 'tpope/vim-vinegar'
 
@@ -114,11 +114,11 @@ Plug 'ruanyl/vim-fixmyjs'
 " snippets/ auto-pair
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-"Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 "
 "snipptes with autocomplete
 
-Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
+"Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
 
 " auto-pairing
 Plug 'jiangmiao/auto-pairs'
@@ -135,13 +135,13 @@ Plug 'tpope/vim-surround'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " autocomplete
 """"""""""""""""""""""""""""""""""""""""""""""""""
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+"if has('nvim')
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+"  Plug 'Shougo/deoplete.nvim'
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
+"endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " simple todo
@@ -161,7 +161,7 @@ Plug 'vitalk/vim-simple-todo'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " prettifier
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " indentation
