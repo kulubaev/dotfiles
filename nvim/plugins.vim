@@ -64,6 +64,8 @@ Plug 'terryma/vim-smooth-scroll'
 
 " fzf.vim
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+" tagbar.vim
+Plug 'majutsushi/tagbar'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " status

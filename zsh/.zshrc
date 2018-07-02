@@ -2,12 +2,13 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-if [ -f ~/.config/zsh/.aliases ]; then
-  source ~/.config/zsh/.aliases
-fi
+[ -f ~/.config/zsh/.aliases ] && source ~/.config/zsh/.aliases
+[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+[ -f ~/.config/zsh/.git.zsh ] && source ~/.config/zsh/.git.zsh
+[ -f ~/.config/zsh/.colors ]  && source ~/.config/zsh/.colors
 
-[ -f ./.fzf.zsh ] && source ./.fzf.zsh
+if [ "$TMUX" = "" ]; then tmux; fi
+cd $HOME/workshop/
 
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
 
