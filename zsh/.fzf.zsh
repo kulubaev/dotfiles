@@ -2,7 +2,7 @@
 # ---------
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
   export PATH="$PATH:/usr/local/opt/fzf/bin"
-  export FZ_DEFAULT_COMMAND='rg --files --hidden --follow'
+  export FZ_DEFAULT_COMMAND='rg --files --hidden --smartcase --glob "!.git/*"'
 fi
 
 # Auto-completion

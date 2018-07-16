@@ -8,7 +8,7 @@ nnoremap ; :
 nnoremap : ;
 
 " map new leader
-let mapleader = "keypad_slash"
+let mapleader = '~'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "movement

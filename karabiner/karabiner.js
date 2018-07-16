@@ -173,10 +173,9 @@ const DEFAULT_PROFILE = {
           ...spaceFN("b", "spacebar"),
           ...spaceFN("h", "left_arrow"),
           ...spaceFN("l", "right_arrow"),
-          ...spaceFN("k", "down_arrow"),
-          ...spaceFN("j", "left_arrow"),
-          ...spaceFN("i", "up_arrow"),
-          ...spaceFN("hyphen", "keypad_slash")
+          ...spaceFN("k", "up_arrow"),
+          ...spaceFN("j", "down_arrow"),
+          ...spaceFN("i", "up_arrow")
         ]
       },
       {
@@ -215,35 +214,6 @@ const DEFAULT_PROFILE = {
             type: "basic"
           },
           {
-            description:
-              "Change return to control when used as modifier, return when used alone",
-            from: {
-              key_code: "return_or_enter",
-              modifiers: {
-                optional: ["any"]
-              }
-            },
-            parameters: {
-              basic: {
-                to_if_alone_timeout_milliseconds: 500
-              }
-            },
-            to: [
-              {
-                key_code: "right_control"
-              }
-            ],
-            to_if_alone: [
-              {
-                key_code: "return_or_enter",
-                modifiers: {
-                  optional: ["any"]
-                }
-              }
-            ],
-            type: "basic"
-          },
-          {
             description: "Left and Right Shift together -> Caps Lock",
             from: {
               key_code: "right_shift",
@@ -266,67 +236,6 @@ const DEFAULT_PROFILE = {
               modifiers: {
                 mandatory: ["right_shift"],
                 optional: ["any"]
-              }
-            },
-            to: [
-              {
-                key_code: "caps_lock"
-              }
-            ],
-            type: "basic"
-          }
-        ]
-      },
-      {
-        description:
-          "Change Return to Control when used as modifier, Return when used alone",
-        manipulators: [
-          {
-            from: {
-              key_code: "return_or_enter",
-              modifiers: {
-                optional: ["any"]
-              }
-            },
-            to: [
-              {
-                key_code: "right_control",
-                lazy: true
-              }
-            ],
-            to_if_alone: [
-              {
-                key_code: "return_or_enter"
-              }
-            ],
-            to_if_held_down: [
-              {
-                key_code: "return_or_enter"
-              }
-            ],
-            type: "basic"
-          }
-        ]
-      },
-      {
-        description: "Left and Right Shift together toggle Caps Lock",
-        manipulators: [
-          {
-            from: {
-              modifiers: {
-                optional: ["any"]
-              },
-              simultaneous: [
-                {
-                  key_code: "left_shift"
-                },
-                {
-                  key_code: "right_shift"
-                }
-              ],
-              simultaneous_options: {
-                key_down_order: "insensitive",
-                key_up_order: "insensitive"
               }
             },
             to: [
