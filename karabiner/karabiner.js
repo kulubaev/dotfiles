@@ -174,10 +174,11 @@ const DEFAULT_PROFILE = {
           ...spaceFN("h", "left_arrow"),
           ...spaceFN("l", "right_arrow"),
           ...spaceFN("k", "down_arrow"),
-          ...spaceFN("j", "up_arrow")
+          ...spaceFN("j", "left_arrow"),
+          ...spaceFN("i", "up_arrow"),
+          ...spaceFN("hyphen", "keypad_slash")
         ]
       },
-
       {
         description: `custom change
 
@@ -265,6 +266,67 @@ const DEFAULT_PROFILE = {
               modifiers: {
                 mandatory: ["right_shift"],
                 optional: ["any"]
+              }
+            },
+            to: [
+              {
+                key_code: "caps_lock"
+              }
+            ],
+            type: "basic"
+          }
+        ]
+      },
+      {
+        description:
+          "Change Return to Control when used as modifier, Return when used alone",
+        manipulators: [
+          {
+            from: {
+              key_code: "return_or_enter",
+              modifiers: {
+                optional: ["any"]
+              }
+            },
+            to: [
+              {
+                key_code: "right_control",
+                lazy: true
+              }
+            ],
+            to_if_alone: [
+              {
+                key_code: "return_or_enter"
+              }
+            ],
+            to_if_held_down: [
+              {
+                key_code: "return_or_enter"
+              }
+            ],
+            type: "basic"
+          }
+        ]
+      },
+      {
+        description: "Left and Right Shift together toggle Caps Lock",
+        manipulators: [
+          {
+            from: {
+              modifiers: {
+                optional: ["any"]
+              },
+              simultaneous: [
+                {
+                  key_code: "left_shift"
+                },
+                {
+                  key_code: "right_shift"
+                }
+              ],
+              simultaneous_options: {
+                key_down_order: "insensitive",
+                key_up_order: "insensitive"
               }
             },
             to: [

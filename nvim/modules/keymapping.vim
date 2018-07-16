@@ -1,6 +1,6 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"convenience 
+"convenience
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " map and save some keystrokes
@@ -8,10 +8,10 @@ nnoremap ; :
 nnoremap : ;
 
 " map new leader
-let mapleader = "-"
+let mapleader = "keypad_slash"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"movement 
+"movement
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 tnoremap <Esc> <C-\><C-n>
@@ -22,14 +22,14 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"folding 
+"folding
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " folding
 nnoremap <space> za
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" highlight 
+" highlight
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " map cursorcolumn
@@ -42,7 +42,7 @@ nnoremap gV `[v`]
 nnoremap <Leader>s :mksession<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" clean 
+" clean
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " trim whitespace trailing
