@@ -4,3 +4,6 @@ alias vim='/usr/local/bin/nvim'
 alias vi='/usr/local/bin/nvim'
 
 alias tmux='TERM=screen-256color-bce /usr/local/bin/tmux'
+
+alias g="new_loc=\$(cat ~/Library/autojump/autojump.txt | sort -n | awk '{print \$2}' | fzf +s) && cd \"\$new_loc\""
+

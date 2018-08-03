@@ -532,30 +532,8 @@
           "identifiers": {
             "is_keyboard": true,
             "is_pointing_device": false,
-            "product_id": 10522,
+            "product_id": 50478,
             "vendor_id": 1133
-          }
-        },
-        {
-          "disable_built_in_keyboard_if_exists": false,
-          "fn_function_keys": [],
-          "ignore": false,
-          "manipulate_caps_lock_led": true,
-          "simple_modifications": [
-            {
-              "from": {
-                "key_code": "fn"
-              },
-              "to": {
-                "key_code": "left_control"
-              }
-            }
-          ],
-          "identifiers": {
-            "is_keyboard": true,
-            "is_pointing_device": false,
-            "product_id": 34050,
-            "vendor_id": 10522
           }
         },
         {

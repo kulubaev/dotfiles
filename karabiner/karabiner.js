@@ -114,13 +114,23 @@ const LOGITECH = {
   ...DEVICE_DEFAULTS,
   identifiers: {
     ...IDENTIFIER_DEFAULTS,
-    product_id: 50478,
+    product_id: 10522,
     vendor_id: 1133
   },
   simple_modifications: [
     ...fromTo("left_gui", "left_option"),
     ...fromTo("left_alt", "left_command")
   ]
+};
+
+const ANKER = {
+  ...DEVICE_DEFAULTS,
+  identifiers: {
+    ...IDENTIFIER_DEFAULTS,
+    product_id: 34050,
+    vendor_id: 10522
+  },
+  simple_modifications: [...fromTo("fn", "left_control")]
 };
 
 const PARAMETER_DEFAULTS = {
@@ -249,7 +259,7 @@ const DEFAULT_PROFILE = {
       }
     ]
   },
-  devices: [LOGITECH, APPLE_INTERNAL],
+  devices: [LOGITECH, ANKER, APPLE_INTERNAL],
   name: "Default",
   selected: true
 };

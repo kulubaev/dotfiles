@@ -36,6 +36,8 @@ Plug 'mhartington/oceanic-next'
 
 Plug 'chriskempson/base16-vim'
 
+Plug 'rafi/awesome-vim-colorschemes'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " focus
 """"""""""""""""""""""""""""""""""""""""""""""""""

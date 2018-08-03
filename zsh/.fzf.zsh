@@ -1,9 +1,13 @@
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="$PATH:/usr/local/opt/fzf/bin"
-  export FZ_DEFAULT_COMMAND='rg --files --hidden --smartcase --glob "!.git/*"'
+ export PATH="$PATH:/usr/local/opt/fzf/bin"
+#export FZ_DEFAULT_COMMAND='rg --files --hidden --smartcase --glob "!.git/*"'
+ export FZF_DEFAULT_COMMAND='fd . $HOME'
+ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+ export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 fi
+
 
 # Auto-completion
 # ---------------

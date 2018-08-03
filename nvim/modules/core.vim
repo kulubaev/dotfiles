@@ -65,6 +65,8 @@ set cursorline
 " highlight current line
 set cursorcolumn
 
+au BufEnter * setlocal cursorline
+au BufLeave * setlocal nocursorline
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " searching
@@ -96,7 +98,7 @@ set foldmethod=indent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " colors
-""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " pane

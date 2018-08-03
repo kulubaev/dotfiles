@@ -18,6 +18,11 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 set background=dark
 
 "colorscheme  base16-tomorrow-night
-colorscheme base16-ocean
+"colorscheme base16-ocean
+"colorscheme papercolor
+"colorscheme jellybeans
+"colorscheme wombat256mod
+"colorscheme focuspoint
+colorscheme muon
 
 hi Normal guibg=NONE ctermbg=NONE

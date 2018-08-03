@@ -8,13 +8,13 @@ nnoremap ; :
 nnoremap : ;
 
 " map new leader
-let mapleader = '~'
+let mapleader = "="
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "movement
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-tnoremap <Esc> <C-\><C-n>
+"tnoremap <Esc> <C-\><C-n>
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
