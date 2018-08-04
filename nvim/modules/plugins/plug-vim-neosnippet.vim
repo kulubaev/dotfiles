@@ -1,6 +1,6 @@
 let g:deoplete#ignore_sources = {}
 
-"let g:deoplete#ignore_sources._ = ["neosnippet"]
+let g:deoplete#ignore_sources._ = ["neosnippet"]
 
 let g:snippet#snippets_directory='~/.config/nvim/snipts'
 
@@ -23,9 +23,25 @@ let g:snippet#snippets_directory='~/.config/nvim/snipts'
 "imap <expr><TAB> <SID>neosnippet_complete()
 
 
+"let g:AutoPairsMapCR=0
+"let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_smart_case = 1
+"imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+"imap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+"imap <expr><CR> pumvisible() ? deoplete#mappings#close_popup() : "\<CR>"
+
+
+    " SuperTab like snippets' behavior.
+    "imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+    " \ "\<Plug>(neosnippet_expand_or_jump)"
+    " \: pumvisible() ? "\<C-n>" : "\<TAB>"
+    "smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+    " \ "\<Plug>(neosnippet_expand_or_jump)"
+    " \: "\<TAB>"
+    " " deoplete + neosnippet + autopairs
 let g:AutoPairsMapCR=0
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
+"let g:deoplete#enable_smart_case = 1
 imap <expr><TAB> pumvisible() ? "\<C-n>" : neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 imap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 inoremap <expr><CR> pumvisible() ? deoplete#mappings#close_popup() : "\<CR>"

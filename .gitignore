@@ -1,5 +1,8 @@
 nvim/plugged/
+nvim/.netrwhist
 configstore/
 fonts/
 alacritty/
 node_modules/
+tags
+

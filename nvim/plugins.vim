@@ -61,19 +61,23 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'terryma/vim-smooth-scroll'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" folder file browse
+" fuzzy search
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" search
-
 " fzf.vim
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-" tagbar.vim
-Plug 'majutsushi/tagbar'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "file switch/map
 """"""""""""""""""""""""""""""""""""""""""""""""""
+
 Plug 'tpope/vim-projectionist'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" uitlities/commandline
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" unix commands as vim commands
+Plug 'tpope/vim-eunuch'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " status
@@ -121,11 +125,11 @@ Plug 'ruanyl/vim-fixmyjs'
 " snippets/ auto-pair
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 "
 "snipptes with autocomplete
 
-"Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
+Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
 
 " auto-pairing
 Plug 'jiangmiao/auto-pairs'
@@ -142,13 +146,21 @@ Plug 'tpope/vim-surround'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " autocomplete
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"if has('nvim')
-"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-"  Plug 'Shougo/deoplete.nvim'
-"  Plug 'roxma/nvim-yarp'
-"  Plug 'roxma/vim-hug-neovim-rpc'
-"endif
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" ctags
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Plug 'ludovicchabant/vim-gutentags'
+" tagbar.vim
+Plug 'majutsushi/tagbar'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " simple todo
@@ -198,6 +210,11 @@ Plug 'elzr/vim-json'
 Plug 'ruanyl/vim-fixmyjs'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" jsdoc
+""""""""""""""""""""""""""""""""""""""""""""""""""
+Plug 'heavenshell/vim-jsdoc'
+"Plug 'othree/jsdoc-syntax.vim'
+Plug 'othree/yajs.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
