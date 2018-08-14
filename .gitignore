@@ -4,5 +4,7 @@ configstore/
 fonts/
 alacritty/
 node_modules/
+.tags/
 tags
+.tags
 
