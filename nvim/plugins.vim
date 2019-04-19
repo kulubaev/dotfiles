@@ -132,7 +132,7 @@ Plug 'ruanyl/vim-fixmyjs'
 Plug 'Shougo/neosnippet' | Plug 'Shougo/neosnippet-snippets'
 
 " auto-pairing
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 
 " auto insert html
 Plug 'mattn/emmet-vim'
@@ -142,6 +142,13 @@ Plug 'alvan/vim-closetag'
 
 "surround
 Plug 'tpope/vim-surround'
+
+"vim-closely
+"Plug 'rstacruz/vim-closer'
+
+"lexima
+
+Plug 'cohama/lexima.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " autocomplete
@@ -219,6 +226,17 @@ Plug 'othree/yajs.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" css
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Plug 'ap/vim-css-color'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " markdown
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -233,7 +251,9 @@ Plug 'junegunn/vim-xmark', { 'do': 'make' }
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " syntax
 """"""""""""""""""""""""""""""""""""""""""""""""""
-Plug 'plasticboy/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
+
+Plug 'gabrielelana/vim-markdown'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " style

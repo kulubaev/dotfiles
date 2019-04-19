@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/ruslan/.config/nvim'
-let g:netrw_dirhist_2='/Users/ruslan/.config/nvim/snipts'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Volumes/workshop/projects/cryptomart/html/src'
+let g:netrw_dirhist_2='/Volumes/workshop/projects/cryptomart/html/src/icons'
+let g:netrw_dirhist_3='/Volumes/workshop/projects/cryptomart/html/src'
+let g:netrw_dirhist_4='/Volumes/workshop/projects/cryptomart/html'
+let g:netrw_dirhist_5='/Volumes/workshop/projects/cryptomart/html/src/icons'
+let g:netrw_dirhist_6='/Volumes/workshop/projects/cryptomart/html/src/sass/abstract'
+let g:netrw_dirhist_7='/Volumes/workshop/projects/cryptomart/html/src/sass'

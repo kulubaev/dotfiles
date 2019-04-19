@@ -48,3 +48,21 @@ nnoremap <Leader>s :mksession<CR>
 " trim whitespace trailing
 nnoremap <Leader>t :%s/\s\+$//e<CR>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" fixing emmet
+""""""""""""""""""""""""""""""""""""""""""""""""""
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+
+" poor man auto-close
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+"inoremap ' ''<left>
+"inoremap ( ()<left>
+"inoremap [ []<left>
+"inoremap { {}<left>
+"inoremap {<CR> {<CR>}<ESC>O
+"inoremap {;<CR> {<CR>};<ESC>O

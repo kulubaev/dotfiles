@@ -7,4 +7,5 @@ node_modules/
 .tags/
 tags
 .tags
+.DS_Store
 

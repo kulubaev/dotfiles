@@ -111,7 +111,13 @@ set winwidth=150
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " set relative number
 set relativenumber
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" font
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"set font
 
-
+set guifont=Monaco:h12
 let g:python_2_host_prog = '/usr/local/bin/python'
 let g:python_3_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = '/Users/ruslan/.pyenv/versions/neovim3/bin/python'
+
